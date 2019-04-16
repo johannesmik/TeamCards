@@ -1,9 +1,91 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
+    <ion-title>Scrum Cards</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+  <ion-list>
+    <ion-reorder-group disabled="false" (ionItemReorder)="reorder($event)">
+      <ion-item [href]="'display-card/0'">
+        <ion-label>
+          0
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/½'">
+        <ion-label>
+          ½
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/1'">
+        <ion-label>
+          1
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/2'">
+        <ion-label>
+          2
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/3'">
+        <ion-label>
+          3
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/5'">
+        <ion-label>
+          5
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/8'">
+        <ion-label>
+          8
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/13'">
+        <ion-label>
+          13
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/20'">
+        <ion-label>
+          20
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/40'">
+        <ion-label>
+          40
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/100'">
+        <ion-label>
+          100
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/%3F'">
+        <ion-label>
+          ?
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [href]="'display-card/☕'">
+        <ion-label>
+          ☕
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>
