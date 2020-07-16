@@ -9,7 +9,7 @@ import {NavController} from '@ionic/angular';
 })
 export class DisplayCardPage implements OnInit {
 
-  private text: string;
+  public text: string;
 
   constructor(private route: ActivatedRoute) { }
 
