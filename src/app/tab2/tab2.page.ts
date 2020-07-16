@@ -8,11 +8,11 @@ import { DisplayCardPage } from '../display-card/display-card.page';
 })
 export class Tab2Page {
 
-    displayCard = DisplayCardPage;
+  displayCard = DisplayCardPage;
 
-    reorder(e): void {
-        e.detail.complete();
-    }
+  reorder(e): void {
+    e.detail.complete();
+  }
 
 }
 

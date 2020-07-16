@@ -1,14 +1,60 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title> Tab One </ion-title>
+    <ion-title>Reactions</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-content>
-        <p>Reserved for more awesome cards</p>
-      </ion-card-content>
-    </ion-card>
+  <ion-list>
+    <ion-reorder-group disabled="false" (ionItemReorder)="reorder($event)">
+      <ion-item [routerLink]="['/display-card/👍']">
+        <ion-label>
+          👍
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/👎']">
+        <ion-label>
+          👎
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/🙂']">
+        <ion-label>
+          🙂
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/🙁']">
+        <ion-label>
+          🙁
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/😉']">
+        <ion-label>
+          😉
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/😖']">
+        <ion-label>
+          😖
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/😴']">
+        <ion-label>
+          😴
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item [routerLink]="['/display-card/😲']">
+        <ion-label>
+          😲
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
 </ion-content>
